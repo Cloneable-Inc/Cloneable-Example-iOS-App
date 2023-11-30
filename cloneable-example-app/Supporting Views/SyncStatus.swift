@@ -36,12 +36,17 @@ struct SyncStatus: View {
     }
 
     private var syncStatusView: some View {
-        Group { // Wrap the switch statement in a Group
+        Group {
             switch cloneable.syncStatus {
             case .syncing:
                 StatusProgressView(message: "Syncing with platform")
             case .synced:
-                StatusMessageView(iconName: "checkmark.circle", message: "Synced with platform", iconColor: .green)
+                if cloneable.numFilesToSync != 0 {
+                    // This condition is now nested within the .syncing case
+                    StatusProgressView(message: "\(cloneable.numFilesToSync) files to sync")
+                } else {
+                    StatusMessageView(iconName: "checkmark.circle", message: "Synced with platform", iconColor: .green)
+                }
             case .sync_error:
                 StatusMessageView(iconName: "x.circle", message: "PLATFORM ERROR", iconColor: .red)
             case .not_synced:
@@ -49,14 +54,13 @@ struct SyncStatus: View {
             default:
                 if let syncError = cloneable.syncError {
                     StatusMessageView(iconName: "x.circle", message: syncError, iconColor: .red)
-                } else if cloneable.numFilesToSync != 0 {
-                    StatusProgressView(message: "\(cloneable.numFilesToSync) files to sync")
                 } else {
                     StatusProgressView(message: "Syncing with platform")
                 }
             }
         }
     }
+
 
 }
 

@@ -321,6 +321,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Example Cloneable App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows camera usage for capturing data";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use Location to capture location data during workflows";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -362,6 +364,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Example Cloneable App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows camera usage for capturing data";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use Location to capture location data during workflows";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
