@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "cloneable-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Cloneable-Inc/Cloneable-iOS-SDK/",
+      "state" : {
+        "revision" : "3cbd0618b8b21195cdc39bd9a067842464a25227",
+        "version" : "0.1.99"
+      }
+    }
+  ],
+  "version" : 2
+}
