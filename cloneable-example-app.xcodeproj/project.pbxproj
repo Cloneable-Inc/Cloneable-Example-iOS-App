@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F133F132B2BF12E0081F912 /* CountComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F133F122B2BF12E0081F912 /* CountComponent.swift */; };
+		2F133F182B2BF9F20081F912 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F133F172B2BF9F20081F912 /* PDFView.swift */; };
+		2F133F1A2B2BF9FB0081F912 /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F133F192B2BF9FB0081F912 /* PDFViewModel.swift */; };
 		2F1885B32B182B0800C53777 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1885B22B182B0800C53777 /* Launch Screen.storyboard */; };
 		2F1885B82B182CEF00C53777 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1885B52B182CEF00C53777 /* Settings.swift */; };
 		2F1885B92B182CEF00C53777 /* SyncStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1885B62B182CEF00C53777 /* SyncStatus.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F133F122B2BF12E0081F912 /* CountComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountComponent.swift; sourceTree = "<group>"; };
+		2F133F172B2BF9F20081F912 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		2F133F192B2BF9FB0081F912 /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
 		2F1885B22B182B0800C53777 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2F1885B52B182CEF00C53777 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		2F1885B62B182CEF00C53777 /* SyncStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncStatus.swift; sourceTree = "<group>"; };
@@ -56,6 +62,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F133F102B2BF0CE0081F912 /* Example Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F133F152B2BF9C50081F912 /* UI Components */,
+				2F133F142B2BF9BB0081F912 /* Non-ui Components */,
+			);
+			path = "Example Components";
+			sourceTree = "<group>";
+		};
+		2F133F112B2BF11C0081F912 /* Count */ = {
+			isa = PBXGroup;
+			children = (
+				2F133F122B2BF12E0081F912 /* CountComponent.swift */,
+			);
+			path = Count;
+			sourceTree = "<group>";
+		};
+		2F133F142B2BF9BB0081F912 /* Non-ui Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F133F112B2BF11C0081F912 /* Count */,
+			);
+			path = "Non-ui Components";
+			sourceTree = "<group>";
+		};
+		2F133F152B2BF9C50081F912 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F133F162B2BF9D40081F912 /* PDF Viewer */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		2F133F162B2BF9D40081F912 /* PDF Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				2F133F172B2BF9F20081F912 /* PDFView.swift */,
+				2F133F192B2BF9FB0081F912 /* PDFViewModel.swift */,
+			);
+			path = "PDF Viewer";
+			sourceTree = "<group>";
+		};
 		2F1885B42B182CDA00C53777 /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +133,7 @@
 		2F25628D2B158C8300A5DB50 /* cloneable-example-app */ = {
 			isa = PBXGroup;
 			children = (
+				2F133F102B2BF0CE0081F912 /* Example Components */,
 				2F1885B42B182CDA00C53777 /* Supporting Views */,
 				2F25628E2B158C8300A5DB50 /* cloneable_example_app.swift */,
 				2F2562902B158C8300A5DB50 /* ContentView.swift */,
@@ -182,11 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F133F182B2BF9F20081F912 /* PDFView.swift in Sources */,
 				2F1885BA2B182CEF00C53777 /* WorkflowCellView.swift in Sources */,
 				2F1885B92B182CEF00C53777 /* SyncStatus.swift in Sources */,
+				2F133F1A2B2BF9FB0081F912 /* PDFViewModel.swift in Sources */,
 				2F1885B82B182CEF00C53777 /* Settings.swift in Sources */,
 				2F2562912B158C8300A5DB50 /* ContentView.swift in Sources */,
 				2F25628F2B158C8300A5DB50 /* cloneable_example_app.swift in Sources */,
+				2F133F132B2BF12E0081F912 /* CountComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +474,7 @@
 			repositoryURL = "https://github.com/Cloneable-Inc/Cloneable-iOS-SDK/";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.92;
+				minimumVersion = 0.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
