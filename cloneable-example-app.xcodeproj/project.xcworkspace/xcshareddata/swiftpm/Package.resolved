@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Cloneable-Inc/Cloneable-iOS-SDK/",
       "state" : {
-        "revision" : "6f57e876f0f030f4b05526d6a6776effa61bfad0",
-        "version" : "0.2.0"
+        "revision" : "a0aef4e7f80675cd55ae8d124d98aca5cd93539d",
+        "version" : "0.2.11"
       }
     }
   ],
