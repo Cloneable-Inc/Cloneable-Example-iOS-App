@@ -9,6 +9,10 @@ The Cloneable.ai Example App showcases how to:
 - Create custom components using the SDK.
 - Execute and manage workflows within the app.
 
+<img src="https://github.com/Cloneable-Inc/Cloneable-Example-iOS-App/assets/5044783/149ffbb8-52aa-4193-b4bf-481a6e79ed90" alt="Home screen" height="500">
+<img src="https://github.com/Cloneable-Inc/Cloneable-Example-iOS-App/assets/5044783/ab14fd28-7a56-444e-acaf-b9d2d0e97ba8" alt="Tree demo" height="500">
+<img src="https://github.com/Cloneable-Inc/Cloneable-Example-iOS-App/assets/5044783/8d9790ac-9247-4809-8294-2f5feec3210c" alt="Tree demo" height="500">
+
 ## Documentation
 
 For detailed information about Cloneable.ai and its SDK, please refer to the official documentation: [Cloneable Documentation](https://docs.cloneable.ai)
