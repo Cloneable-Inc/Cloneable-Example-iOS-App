@@ -18,7 +18,7 @@
 		2F2562912B158C8300A5DB50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2562902B158C8300A5DB50 /* ContentView.swift */; };
 		2F2562932B158C8400A5DB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2562922B158C8400A5DB50 /* Assets.xcassets */; };
 		2F2562972B158C8400A5DB50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2562962B158C8400A5DB50 /* Preview Assets.xcassets */; };
-		2FD827462B17990A00403C0E /* Cloneable-iOS-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD827452B17990A00403C0E /* Cloneable-iOS-SDK */; };
+		2F79DA362B30D23300B25581 /* Cloneable-iOS-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2F79DA352B30D23300B25581 /* Cloneable-iOS-SDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD827462B17990A00403C0E /* Cloneable-iOS-SDK in Frameworks */,
+				2F79DA362B30D23300B25581 /* Cloneable-iOS-SDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +171,7 @@
 			);
 			name = "cloneable-example-app";
 			packageProductDependencies = (
-				2FD827452B17990A00403C0E /* Cloneable-iOS-SDK */,
+				2F79DA352B30D23300B25581 /* Cloneable-iOS-SDK */,
 			);
 			productName = "cloneable-example-app";
 			productReference = 2F25628B2B158C8300A5DB50 /* cloneable-example-app.app */;
@@ -202,7 +202,7 @@
 			);
 			mainGroup = 2F2562822B158C8300A5DB50;
 			packageReferences = (
-				2FD827442B17990A00403C0E /* XCRemoteSwiftPackageReference "Cloneable-iOS-SDK" */,
+				2F79DA342B30D23300B25581 /* XCRemoteSwiftPackageReference "Cloneable-iOS-SDK" */,
 			);
 			productRefGroup = 2F25628C2B158C8300A5DB50 /* Products */;
 			projectDirPath = "";
@@ -385,7 +385,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -428,7 +428,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -469,20 +469,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2FD827442B17990A00403C0E /* XCRemoteSwiftPackageReference "Cloneable-iOS-SDK" */ = {
+		2F79DA342B30D23300B25581 /* XCRemoteSwiftPackageReference "Cloneable-iOS-SDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Cloneable-Inc/Cloneable-iOS-SDK/";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.11;
+				minimumVersion = 0.2.12;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2FD827452B17990A00403C0E /* Cloneable-iOS-SDK */ = {
+		2F79DA352B30D23300B25581 /* Cloneable-iOS-SDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2FD827442B17990A00403C0E /* XCRemoteSwiftPackageReference "Cloneable-iOS-SDK" */;
+			package = 2F79DA342B30D23300B25581 /* XCRemoteSwiftPackageReference "Cloneable-iOS-SDK" */;
 			productName = "Cloneable-iOS-SDK";
 		};
 /* End XCSwiftPackageProductDependency section */
