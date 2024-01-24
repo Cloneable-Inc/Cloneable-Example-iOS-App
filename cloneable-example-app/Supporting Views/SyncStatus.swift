@@ -22,7 +22,7 @@ struct SyncStatus: View {
                 syncStatusView
             }
         }
-        .onChange(of: cloneable.networkStatus) { oldStatus, newStatus in
+        .onChange(of: cloneable.networkStatus) { newStatus in
             print("Network status changed:", newStatus)
         }
     }
@@ -42,6 +42,10 @@ struct SyncStatus: View {
                 StatusProgressView(message: "Syncing with platform")
             case .synced:
                 if cloneable.numFilesToSync != 0 {
+                    ProgressView(value: cloneable.currentFileDownloadProgress ?? 0.0)
+                        .foregroundColor(.gray)
+                        .padding([.leading, .trailing], 5)
+                        .frame(maxWidth: 400)
                     // This condition is now nested within the .syncing case
                     StatusProgressView(message: "\(cloneable.numFilesToSync) files to sync")
                 } else {
