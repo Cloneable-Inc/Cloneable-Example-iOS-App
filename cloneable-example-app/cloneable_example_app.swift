@@ -11,8 +11,11 @@ import CloneablePlatformiOS
 
 @main
 struct cloneable_example_app: App {
+    let endPoint: APIEndpoint = .dev
+
     // instantiate the CloneablePlatform as a StateObject to use throughout our app
-    @StateObject private var cloneable = CloneablePlatform(authType: .email, backend_env: .dev)
+    @StateObject private var cloneable = CloneablePlatform(authType: .api, backend_env: .dev)
+    
     
     init() {
         // Register our custom components
@@ -27,6 +30,9 @@ struct cloneable_example_app: App {
             ContentView()
             // add the CloneablePlatform as an environment object so that we can access it throughout the app
                 .environmentObject(cloneable)
+                .onAppear {
+                    cloneable.login(apiKey: API_KEY_HERE)
+                }
         }
     }
 }

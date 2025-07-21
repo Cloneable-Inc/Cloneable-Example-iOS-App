@@ -10,6 +10,7 @@
 		2F133F132B2BF12E0081F912 /* CountComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F133F122B2BF12E0081F912 /* CountComponent.swift */; };
 		2F133F182B2BF9F20081F912 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F133F172B2BF9F20081F912 /* PDFView.swift */; };
 		2F133F1A2B2BF9FB0081F912 /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F133F192B2BF9FB0081F912 /* PDFViewModel.swift */; };
+		2F136C712E2AAC7C008B7ACC /* CloneablePlatformSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2F136C702E2AAC7C008B7ACC /* CloneablePlatformSDK */; };
 		2F1885B32B182B0800C53777 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1885B22B182B0800C53777 /* Launch Screen.storyboard */; };
 		2F1885B82B182CEF00C53777 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1885B52B182CEF00C53777 /* Settings.swift */; };
 		2F1885B92B182CEF00C53777 /* SyncStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1885B62B182CEF00C53777 /* SyncStatus.swift */; };
@@ -18,21 +19,7 @@
 		2F2562912B158C8300A5DB50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2562902B158C8300A5DB50 /* ContentView.swift */; };
 		2F2562932B158C8400A5DB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2562922B158C8400A5DB50 /* Assets.xcassets */; };
 		2F2562972B158C8400A5DB50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2562962B158C8400A5DB50 /* Preview Assets.xcassets */; };
-		2F79DA362B30D23300B25581 /* Cloneable-iOS-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2F79DA352B30D23300B25581 /* Cloneable-iOS-SDK */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2FFA70AE2B16D6EE0050E79A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2F133F122B2BF12E0081F912 /* CountComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountComponent.swift; sourceTree = "<group>"; };
@@ -55,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F79DA362B30D23300B25581 /* Cloneable-iOS-SDK in Frameworks */,
+				2F136C712E2AAC7C008B7ACC /* CloneablePlatformSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				2F25628D2B158C8300A5DB50 /* cloneable-example-app */,
+				2F91DC352E213E4900FDB33F /* Frameworks */,
 				2F25628C2B158C8300A5DB50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -153,6 +141,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2F91DC352E213E4900FDB33F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,7 +158,6 @@
 				2F2562882B158C8300A5DB50 /* Frameworks */,
 				2F2562872B158C8300A5DB50 /* Sources */,
 				2F2562892B158C8300A5DB50 /* Resources */,
-				2FFA70AE2B16D6EE0050E79A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,7 +165,7 @@
 			);
 			name = "cloneable-example-app";
 			packageProductDependencies = (
-				2F79DA352B30D23300B25581 /* Cloneable-iOS-SDK */,
+				2F136C702E2AAC7C008B7ACC /* CloneablePlatformSDK */,
 			);
 			productName = "cloneable-example-app";
 			productReference = 2F25628B2B158C8300A5DB50 /* cloneable-example-app.app */;
@@ -202,7 +196,6 @@
 			);
 			mainGroup = 2F2562822B158C8300A5DB50;
 			packageReferences = (
-				2F79DA342B30D23300B25581 /* XCRemoteSwiftPackageReference "Cloneable-iOS-SDK" */,
 			);
 			productRefGroup = 2F25628C2B158C8300A5DB50 /* Products */;
 			projectDirPath = "";
@@ -385,7 +378,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -428,7 +421,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -468,22 +461,10 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		2F79DA342B30D23300B25581 /* XCRemoteSwiftPackageReference "Cloneable-iOS-SDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Cloneable-Inc/Cloneable-iOS-SDK/";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.12;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		2F79DA352B30D23300B25581 /* Cloneable-iOS-SDK */ = {
+		2F136C702E2AAC7C008B7ACC /* CloneablePlatformSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F79DA342B30D23300B25581 /* XCRemoteSwiftPackageReference "Cloneable-iOS-SDK" */;
-			productName = "Cloneable-iOS-SDK";
+			productName = CloneablePlatformSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

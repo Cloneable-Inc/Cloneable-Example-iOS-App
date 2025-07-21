@@ -53,8 +53,6 @@ struct SyncStatus: View {
                 }
             case .sync_error:
                 StatusMessageView(iconName: "x.circle", message: "PLATFORM ERROR", iconColor: .red)
-            case .not_synced:
-                StatusMessageView(iconName: "x.circle", message: "Not synced with platform", iconColor: .red)
             default:
                 if let syncError = cloneable.syncError {
                     StatusMessageView(iconName: "x.circle", message: syncError, iconColor: .red)
