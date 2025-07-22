@@ -12,7 +12,9 @@ import CloneablePlatformiOS
 @main
 struct cloneable_example_app: App {
     // instantiate the CloneablePlatform as a StateObject to use throughout our app
-    @StateObject private var cloneable = CloneablePlatform(authType: .email, backend_env: .dev)
+    
+    @StateObject private var cloneable = CloneablePlatform(authType: .api, apiKey: YOUR_API_KEY)
+    
     
     init() {
         // Register our custom components
