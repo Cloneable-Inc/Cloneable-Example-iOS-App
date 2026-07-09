@@ -194,25 +194,7 @@ struct ContentView: View {
                             }
                             .padding(.bottom, 8)
                             
-                            if let syncedWorkflows = cloneable.syncedWorkflows, !syncedWorkflows.isEmpty {
-                                List {
-                                    Section(header: Text("Workflows")
-                                        .font(.system(size: 24, weight: .bold))
-                                        .foregroundColor(Color.primary)
-                                        .textCase(nil)
-                                        .padding([.leading], 0)
-                                    ) {
-                                        ForEach(cloneable.syncedWorkflows!) { workflow in
-                                            WorkflowCellView(workflow: workflow, cloneable: cloneable)
-                                        }
-                                    }
-                                }
-                            } else {
-                                Spacer()
-                                Text("Loading Workflows")
-                                ProgressView()
-                                Spacer()
-                            }
+                            Spacer()
                             SyncStatus()
                                 .padding()
                         }
