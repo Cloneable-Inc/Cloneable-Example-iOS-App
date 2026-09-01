@@ -5,6 +5,9 @@
 # slices all work for a consumer. The SDK release workflow in cloneable-monorepo
 # opens a PR here for each new version and waits for this check to go green.
 #
+# GitHub-hosted macOS: free for public repos, and it keeps fork PRs off the
+# org's Depot runners (which would need "Allow public repositories" enabled).
+#
 # ARCHS=arm64: the SDK ships arm64-only simulator slices; a generic simulator
 # build would also try x86_64 and fail with "unsupported Swift architecture".
 
@@ -25,7 +28,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: depot-macos-26
+    runs-on: macos-26
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
