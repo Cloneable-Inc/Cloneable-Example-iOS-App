@@ -6,7 +6,6 @@ A small SwiftUI app that shows how to integrate the [Cloneable iOS SDK](https://
   <img src="docs/images/example-home.png" alt="Example app home screen with Measure Pole, Measure Midspan and Measure Guy buttons" width="180">
   <img src="docs/images/pole-accuracy-stick.png" alt="Pole workflow: choose the accuracy stick and zero the tilt" width="180">
   <img src="docs/images/pole-mark-top-bottom.png" alt="Pole workflow: mark the top and bottom of the pole on the captured photo" width="180">
-  <img src="docs/images/pole-measured-map.png" alt="A measured pole on the map with Add Guy, Measure Pole and Move Pole actions" width="180">
 </p>
 
 ## What the app demonstrates
@@ -22,7 +21,7 @@ A small SwiftUI app that shows how to integrate the [Cloneable iOS SDK](https://
 
 ## The workflows
 
-The SDK's workflow screens are the same ones that ship in Cloneable's UtilityScout app. The measurement stages use the camera and ARKit, so they only run on a physical iPhone Pro; the simulator can show the setup and editing screens but not the capture stages.
+The measurement stages use the camera and ARKit, so they only run on a physical iPhone Pro; the simulator can show the setup screens but not the capture stages.
 
 ### Measure a pole
 
@@ -34,7 +33,6 @@ The fielder picks the accuracy stick version and zeroes the phone's tilt, places
   <img src="docs/images/pole-accuracy-stick.png" alt="Select your accuracy stick and tilt zeroing screen" width="180">
   <img src="docs/images/stick-intro-pole.png" alt="Stick placement guidance for a bent pole" width="180">
   <img src="docs/images/pole-mark-top-bottom.png" alt="Mark the top and bottom of the pole; the height reads 38.5 ft" width="180">
-  <img src="docs/images/pole-measured-map.png" alt="Measured pole on the map with a green check" width="180">
 </p>
 
 ### Measure a midspan
@@ -47,7 +45,6 @@ For a clearance under the wires the stick goes on the ground directly beneath th
   <img src="docs/images/midspan-stick-field.jpg" alt="Accuracy stick set on the road under the conductors" width="180">
   <img src="docs/images/stick-intro-midspan.png" alt="Guidance to keep the stick base under the wires" width="180">
   <img src="docs/images/midspan-capture.png" alt="Guided capture: place the stick inside the box, then capture the photo" width="180">
-  <img src="docs/images/utilityscout-midspan-sheet.png" alt="A midspan on the map with Re-measure Midspan and Move Midspan actions" width="180">
 </p>
 
 ### Measure a guy
@@ -55,12 +52,6 @@ For a clearance under the wires the stick goes on the ground directly beneath th
 `startGuyWorkflow()`
 
 A guy is added from a measured pole. The workflow records the guy's lead length and angle from the pole, suggests angles (perpendicular to the line, opposite the span pull), and lets the fielder correct either value before saving.
-
-<p>
-  <img src="docs/images/utilityscout-pole-sheet.png" alt="A selected pole with Add Guy Anchor and Re-measure Pole actions" width="180">
-  <img src="docs/images/utilityscout-guy-editor.png" alt="Edit Guy Wire sheet with suggested angle, angle adjustment and length adjustment" width="180">
-  <img src="docs/images/utilityscout-map.png" alt="A job on the map with measured poles, midspans and guys" width="180">
-</p>
 
 ### Training videos
 
