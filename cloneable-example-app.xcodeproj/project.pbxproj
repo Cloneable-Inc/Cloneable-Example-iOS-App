@@ -482,7 +482,7 @@
 			repositoryURL = "https://github.com/Cloneable-Inc/Cloneable-iOS-SDK/";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.9;
+				minimumVersion = 1.4.10;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
